@@ -33,6 +33,3 @@
 ```
 
 # **5. Отправить в репозиторий файл .gitignore**
-
-git add README.md
-git status [RMP_KISP_24_Lastin_MD](https://github.com/skyknightfly-crypto/RMP_KISP_24_Lastin_MD)
