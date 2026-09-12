@@ -1,13 +1,13 @@
 # RMP_KISP_24_Lastin_MD
 
-<!-- Create a project -->
+# Create a project
 Expo - это структура React Native, которая облегчает разработку приложений для Android и iOS. Наша структура обеспечивает файловую маршрутизацию, стандартную библиотеку нативных модулей и многое другое. Expo - это открытый исходный код с активным сообществом на GitHub и Discord.
 
 Мы также делаем Expo Application Services (EAS), набор услуг, которые дополняют структуру Expo на каждом этапе процесса разработки.
 
     Новичок в программировании? Вы можете создать свое первое приложение Expo, предложив агенту кодирования ИИ вместо написания кода. Следуйте за сборкой с помощью учебника по ИИ. Он охватывает установку с нуля.
 
-Системные требования
+## Системные требования
 
     Node.js (LTS).
     Поддерживаются macOS, Windows (Powershell и WSL 2) и Linux.
@@ -16,7 +16,7 @@ Expo - это структура React Native, которая облегчает
 
 Рекомендуем начать с созданного по умолчанию проекта create-expo-app. Проект по умолчанию включает в себя пример кода, чтобы помочь вам начать работу.
 
-<!-- Set up your environment -->
+# Set up your environment 
 Давайте создадим локальную среду разработки для запуска вашего проекта на Android и iOS.
 Где бы вы хотели развиваться?
 
@@ -25,23 +25,19 @@ Expo - это структура React Native, которая облегчает
 
 Expo Go - это игровая площадка для студентов и учащихся, чтобы быстро попробовать Expo. Разработка - это сборка вашего собственного приложения, которое включает в себя инструменты для разработчиков Expo.
 
-<!-- Start developing -->
-1 Запустите сервер разработки
+# Start developing 
+## 1 Запустите сервер разработки
 
 Чтобы запустить сервер разработки, выполните следующую команду:
 Terminal npm yarn pnpm bun
 npx expo start
 
-2 Откройте приложение на вашем устройстве
+## 2 Откройте приложение на вашем устройстве
 
 После выполнения команды выше вы увидите QR-код в вашем терминале. Отсканируйте этот QR-код, чтобы открыть приложение на вашем устройстве.
 
 Если вы используете Android Emulator или iOS Simulator, вы можете нажать A или I Соответственно, чтобы открыть приложение.
-Есть проблемы?
 
-Make sure you are on the same Wi-Fi network on your computer and your device.
-
-If it still doesn't work, it may be due to the router configuration — this is common for public networks. You can work around this by choosing the Tunnel connection type when starting the development server, then scanning the QR code again.
 Terminal npm yarn pnpm bun
 
 npx expo start --tunnel
@@ -51,16 +47,17 @@ npx expo start --tunnel
 3 Сделайте свое первое изменение
 
 Откройте файл src/app/index.tsx в редакторе кода и внесите изменения.
-src/app/index.tsx
+``` src/app/index.tsx
      <ThemedView style={styles.heroSection}>
        <Анималый икона />
        <ThemedText type="title" style={styles.title}>
            Добро пожаловать в&nbsp;Expo
            Здравствуйте, Мир!
        </ThemedText>
-     </ThemedView>
+     </ThemedView> 
+```
  
-Изменения, которые не появляются на вашем устройстве?
+## Изменения, которые не появляются на вашем устройстве?
 
 Expo Go is configured by default to automatically reload the app whenever a file is changed, but let's make sure to go over the steps to enable it in case somehow things aren't working.
     Make sure you have the development mode enabled in Expo CLI.
@@ -69,7 +66,7 @@ Expo Go is configured by default to automatically reload the app whenever a file
     If you see Fast Refresh enabled, toggle it. If you see Disable Fast Refresh, dismiss the developer menu. Now try making another change.
     Developer menu in Expo Go app.
 
-Структура файлов
+## Структура файлов
 
 Ниже вы можете ознакомиться со структурой файлов проекта по умолчанию:
 приложение
@@ -83,19 +80,21 @@ Expo Go is configured by default to automatically reload the app whenever a file
 
 Файловая маршрутизация
 Приложение имеет два экрана: src/app/index.tsx и src/app/explore.tsx. Файл макета в src/app/_layout.tsx устанавливает навигацию с использованием компонента AppTabs, специфического для платформы, который использует встроенные вкладки на Android и iOS, а также вкладки пользовательского интерфейса Expo Router в Интернете.
-<!-- Next steps -->
+# Next steps 
 Сбросить свой проект
 
 Вы можете удалить код шаблона и начать все заново с новым проектом. Запустите следующую команду для сброса вашего проекта:
+```
 Terminal npm yarn pnpm bun
 npm run reset-project
+```
 
 Эта команда переместит существующие файлы в приложении в app-пример, а затем создаст новый каталог приложений с новым файлом index.tsx.
 Разработка, обзор и развертывание
 Узнайте, как развиваться, читая документы в разделе «Разработка». Вы узнаете, как создавать элементы пользовательского интерфейса, добавлять модульные тесты, включать нативные модули и многое другое.
 После того, как вы разработали свое приложение, вы можете поделиться им со своими товарищами по команде для reviewобзора.
 Наконец, вы можете создавать и отправлять свой проект в магазины приложений.
-<!-- Tools for development -->
+## Tools for development
 Когда вы создаете новый проект с Expo, изучение следующих основных инструментов и веб-сайтов может помочь вам во время вашего путешествия по разработке приложения. На этой странице представлен обзор списка рекомендуемых инструментов.
 
 Expo CLI является инструментом разработки и устанавливается автоматически с expo Пакет при создании нового проекта. Вы можете использовать его, используя npx (беседущий пакет Node.js).
@@ -110,8 +109,6 @@ EAS CLI используется для входа в вашу учетную з
     Создайте специальный профиль для устройства iOS
 
 Expo Doctor - это инструмент командной строки, используемый для диагностики проблем в вашем проекте Expo. 
-
-npx expo-doctor
 
 Эта команда выполняет проверки и анализ кодовой базы вашего проекта на предмет общих проблем в файлах config и package.json, совместимости зависимостей, конфигурационных файлов и общего состояния проекта. Как только проверка завершена, Expo Doctor выведет результаты.
 
@@ -129,7 +126,6 @@ Orbit - это приложение macOS, Windows и Linux, которое по
     Смотрите список прикрепленных проектов с вашей панели мониторинга EAS.
 
 Установка
-
 macOS Win Linux
 
 Вы можете скачать Orbit с Homebrew для macOS или непосредственно из релизов GitHub.
@@ -165,7 +161,7 @@ npx expo-go download android latest
 npx expo-go url ios latest
 
 Эта команда загружает приложение Expo Go в текущий каталог и кэширует его под ~/.expo.
-<!-- Navigation -->
+# Navigation 
 
 Базовая библиотека React Native не включает в себя встроенное навигационное решение, поэтому вы можете выбрать навигационную библиотеку, которая наилучшим образом соответствует вашим потребностям. Для приложений Expo и React Native это, как правило, выбор между React Navigation или Expo Router.
 Почему приложения React Native нуждаются в навигационной библиотеке
