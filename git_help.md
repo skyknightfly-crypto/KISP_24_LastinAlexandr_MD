@@ -1,4 +1,4 @@
-# RMP_KISP_24_Lastin_MD
+# KISP_24_LastinAlexandr_MD
 
 <!-- Конспект по РМП -->
 <!-- Создать проект/Create a project -->
